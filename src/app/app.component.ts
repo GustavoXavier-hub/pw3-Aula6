@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'etec-base';
+ 
+  peso=50;
+  altura=1.75;
+  
+
+  IMC() :void{ 
+    let imc = this.peso/(this.altura*this.altura);
+    alert(imc);
+  }
+
 }
